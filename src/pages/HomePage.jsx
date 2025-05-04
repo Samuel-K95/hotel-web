@@ -5,7 +5,6 @@ import HomeCard from '../components/HomeCard';
 import { TbSquareArrowLeftFilled } from "react-icons/tb";
 import { TbSquareArrowRightFilled } from "react-icons/tb";
 import { useState } from 'react';
-import { useEffect } from 'react';  
 
 
 
@@ -25,25 +24,21 @@ const testimonials = [
 
 const HomePage = () => {
     const navigate = useNavigate()
-    let index = 0;
-    const [data, setData] = useState(testimonials[index])
+    const [index, setIndex] = useState(0);
+    const [data, setData] = useState(testimonials[0]);
 
-    const handleleftclick = () =>{
-        index -= 1
-        if (index < 0){
-            index = testimonials.length - 1
-        }
-        setData(testimonials[index])
-    }
 
-    const handlerightclick = () =>{
-        index += 1
-        if (index > testimonials.length - 1){
-            index = 0
-        }
-
-        setData(testimonials[index])
-    }
+    const handleLeftClick = () => {
+        const newIndex = (index - 1 + testimonials.length) % testimonials.length;
+        setIndex(newIndex);
+        setData(testimonials[newIndex]);
+      };
+      
+      const handleRightClick = () => {
+        const newIndex = (index + 1) % testimonials.length;
+        setIndex(newIndex);
+        setData(testimonials[newIndex]);
+      };
 
   return (
     <div className='flex flex-col gap-10'>
@@ -98,8 +93,8 @@ const HomePage = () => {
                         </p>
                         <p>{data.name}, {data.place}</p>
                         <div className='flex w-full items-center justify-center gap-4'>
-                            <TbSquareArrowLeftFilled onClick={handleleftclick} className='text-4xl text-[#3252DF] cursor-pointer' />
-                            <TbSquareArrowRightFilled onClick={handlerightclick} className='text-4xl text-[#3252DF] cursor-pointer ' />
+                            <TbSquareArrowLeftFilled onClick={handleLeftClick} className='text-4xl text-[#3252DF] cursor-pointer' />
+                            <TbSquareArrowRightFilled onClick={handleRightClick} className='text-4xl text-[#3252DF] cursor-pointer ' />
                         </div>
                     </div>
 
