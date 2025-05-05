@@ -14,14 +14,14 @@ const data = {
         image1: "../src/assets/images/Pool.png",
         image2: "../src/assets/images/pool2.png",
         image3: "../src/assets/images/pool3.png",
-        about_the_place: "Our luxurious pool area offers a peaceful escape for guests looking to unwind and soak up the sun. Whether you're swimming laps or lounging by the pool with a drink in hand, our sparkling water and elegant setting will make your stay unforgettable.\nThe area also includes comfortable sunbeds, poolside service, and a kids' splash zone to ensure fun for the whole family.",
+        about_the_place: "Our luxurious pool area offers a peaceful escape for guests looking to unwind and soak up the sun. Whether you're swimming laps or lounging by the pool with a drink in hand, our sparkling water and elegant setting will make your stay unforgettable.\nThe area also includes comfortable sunbeds, poolside service, and a kids' splash zone to ensure fun for the whole family.\nOur poolside bar offers a curated menu of refreshing beverages and light snacks, and the tranquil atmosphere is perfect for relaxing after a busy day. We also host poolside yoga sessions and aqua fitness classes to add a unique twist to your wellness routine.",
         visit: "Relax, refresh, and make a splash!"
     },
     restaurant: {
         image1: "../src/assets/images/restaurant.png",
         image2: "../src/assets/images/restaurant2.png",
         image3: "../src/assets/images/restaurant3.png",
-        about_the_place: "Delight in world-class cuisine at our in-house restaurant. From gourmet breakfasts to elegant dinners, our chefs craft every dish with care and creativity using the freshest local ingredients.\nThe elegant dining area and personalized service create a warm, welcoming atmosphere for romantic dinners, business meals, or family gatherings.",
+        about_the_place: "Delight in world-class cuisine at our in-house restaurant. From gourmet breakfasts to elegant dinners, our chefs craft every dish with care and creativity using the freshest local ingredients.\nThe elegant dining area and personalized service create a warm, welcoming atmosphere for romantic dinners, business meals, or family gatherings.\nWe offer an extensive wine list, vegetarian and vegan options, and themed dining nights that celebrate global cuisines. Whether you're in the mood for a hearty brunch or a candlelit dinner, our restaurant is the perfect setting to savor memorable meals.",
         visit: "Taste the luxury on your plate!"
     }
 }

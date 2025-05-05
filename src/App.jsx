@@ -3,6 +3,7 @@ import Layout from "./layouts/Layout"
 import HomePage from "./pages/HomePage"
 import Facilities from "./pages/Facilities"
 import FacilityDetails from "./pages/FacilityDetails"
+import ContactUs from "./pages/ContactUs"
 
 export default function App() {
 
@@ -14,11 +15,10 @@ export default function App() {
         <Route path="/facilities" element={<Facilities />} />
         <Route path="/facilities/:id" element={<FacilityDetails />} />
         <Route path="/rooms" element={<h1>Rooms</h1>} />
-        <Route path="/contact-us" element={<h1>Contact Us</h1>} />
+        <Route path="/contact-us" element={<ContactUs />} />
 
         {/* add more routes here */}
       </Route>
-      
     </Routes>
   </BrowserRouter>
   )
