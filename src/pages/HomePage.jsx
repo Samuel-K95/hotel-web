@@ -10,8 +10,8 @@ import { useState } from 'react';
 
 
 const cardData = [
-    {title: "Luxury redefined", content:"Our rooms are designed to transport you into an environment made for leisure. Take your mind off the day-to-day of home life and find a private paradise for yourself.", image:"./src/assets/images/card_img1.png"},
-    {title: "Leave your worries in the sand", content:"We love life at the beach. Being close to the ocean with access to endless sandy beach ensures a relaxed state of mind. It seems like time stands still watching the ocean.", image:"./src/assets/images/card_img2.png"},
+    {title: "Luxury redefined", content:"Our rooms are designed to transport you into an environment made for leisure. Take your mind off the day-to-day of home life and find a private paradise for yourself.", image:"./src/assets/images/card_img1.png", nav_destination: "/rooms"},
+    {title: "Relax, Recharge, and Enjoy Our Exceptional Facilities", content:"We believe in making every moment of your stay effortless and enjoyable. Our hotel offers a range of thoughtfully designed facilities — from cozy lounges and modern fitness spaces to tranquil garden areas and convenient on-site dining. Whether you're here to relax, recharge, or explore, everything you need is right at your fingertips", image:"./src/assets/images/card_img2.png", nav_destination: "/facilities"},
 ]
 
 
@@ -42,9 +42,9 @@ const HomePage = () => {
 
   return (
     <div className='flex flex-col gap-10'>
-        <section className='w-full flex flex-col lg:flex-row justify-center items-center px-4 py-8'>
+        <section className='flex flex-col lg:flex-row items-center justify-center px-4 py-10'>
         {/* Left Text Section */}
-            <div className='w-full lg:w-1/2 flex items-center justify-center mb-8 lg:mb-0'>
+            <div className='w-full lg:w-1/2 flex items-center justify-center mb-10 lg:mb-0'>
                 <div className='w-full max-w-md'>
                 <p className='font-bold text-2xl sm:text-3xl lg:text-4xl text-[#152C5B]'>Welcome To</p>
                 <p className='font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[#152C5B]'>Luxury Hotels</p>
@@ -76,7 +76,7 @@ const HomePage = () => {
                 All our room types are including complementary breakfast!
                 <div className='w-[80%] flex flex-col gap-10 mt-8'>
                     {cardData.map((data, index) => (
-                        <HomeCard key={index} title={data.title} content={data.content} image={data.image} index={index} />
+                        <HomeCard key={index} title={data.title} content={data.content} image={data.image} index={index} nav_destination={data.nav_destination} />
                     ))}
                 </div>
             </div>

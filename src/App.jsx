@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router"
 import Layout from "./layouts/Layout"
 import HomePage from "./pages/HomePage"
+import Facilities from "./pages/Facilities"
+import FacilityDetails from "./pages/FacilityDetails"
 
 export default function App() {
 
@@ -9,7 +11,8 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
-        <Route path="/facilities" element={<h1>Faciities</h1>} />
+        <Route path="/facilities" element={<Facilities />} />
+        <Route path="/facilities/:id" element={<FacilityDetails />} />
         <Route path="/rooms" element={<h1>Rooms</h1>} />
         <Route path="/contact-us" element={<h1>Contact Us</h1>} />
 

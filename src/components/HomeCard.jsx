@@ -3,9 +3,12 @@ import PropTypes from 'prop-types'
 import Button from './Button'
 import { useNavigate } from 'react-router'
 
-const HomeCard = ({ title, content, image, index }) => {
+const HomeCard = ({ title, content, image, index, nav_destination }) => {
   const navigate = useNavigate()
 
+  const handleClick = () => {
+    navigate(nav_destination)
+  }
   return (
     <div className='w-full flex flex-col lg:flex-row gap-6 items-center justify-center px-4 py-6'>
       {index % 2 !== 0 ? (
@@ -19,7 +22,7 @@ const HomeCard = ({ title, content, image, index }) => {
               <Button
                 className='w-24'
                 text="Explore"
-                onClick={() => navigate('/rooms')}
+                onClick={handleClick}
               />
             </div>
           </div>
@@ -52,7 +55,7 @@ const HomeCard = ({ title, content, image, index }) => {
               <Button
                 className='w-24'
                 text="Explore"
-                onClick={() => navigate('/rooms')}
+                onClick={handleClick}
               />
             </div>
           </div>
@@ -67,6 +70,7 @@ HomeCard.propTypes = {
   content: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,
+  nav_destination: PropTypes.string.isRequired,
 }
 
 export default HomeCard
