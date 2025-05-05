@@ -93,8 +93,8 @@ const HomePage = () => {
                         </p>
                         <p>{data.name}, {data.place}</p>
                         <div className='flex w-full items-center justify-center gap-4'>
-                            <TbSquareArrowLeftFilled onClick={handleLeftClick} className='text-4xl text-[#3252DF] cursor-pointer' />
-                            <TbSquareArrowRightFilled onClick={handleRightClick} className='text-4xl text-[#3252DF] cursor-pointer ' />
+                            <TbSquareArrowLeftFilled onClick={handleLeftClick} className='text-4xl text-[#3252df] hover:text-[#2c48c4] cursor-pointer' />
+                            <TbSquareArrowRightFilled onClick={handleRightClick} className='text-4xl text-[#3252DF] hover:text-[#2c48c4] cursor-pointer ' />
                         </div>
                     </div>
 
