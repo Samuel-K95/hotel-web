@@ -10,7 +10,7 @@ const Footer = () => {
 
         {/* Logo Section */}
         <div className='w-full md:w-1/3 flex flex-col md:items-end items-center text-center md:text-right'>
-          <img src="./src/assets/images/logo (2).png" alt="logo" className='w-20 h-20' />
+          <img src="../src/assets/images/logo (2).png" alt="logo" className='w-20 h-20' />
           <p className='font-bold text-2xl sm:text-3xl lg:text-4xl text-[#152C5B]'>Luxury Hotels</p>
         </div>
 
@@ -25,17 +25,17 @@ const Footer = () => {
         {/* Social Media Links */}
         <div className='w-full md:w-1/3 flex flex-col items-center md:items-start gap-3'>
           <div className='flex items-center gap-2'>
-            <img src="/src/assets/images/Instagram (1).png" alt="Instagram" />
+            <img src="../src/assets/images/Instagram (1).png" alt="Instagram" />
             <span className='hover:text-[#3252DF] hover:cursor-pointer'>Instagram</span>
           </div>
 
           <div className='flex items-center gap-2'>
-            <img src="/src/assets/images/Facebook.png" alt="Facebook" />
+            <img src="../src/assets/images/Facebook.png" alt="Facebook" />
             <span className='hover:text-[#3252DF] hover:cursor-pointer'>Facebook</span>
           </div>
 
           <div className='flex items-center gap-2'>
-            <img src="/src/assets/images/Twitter (1).png" alt="Twitter" />
+            <img src="../src/assets/images/Twitter (1).png" alt="Twitter" />
             <span className='hover:text-[#3252DF] hover:cursor-pointer'>Twitter</span>
           </div>
         </div>

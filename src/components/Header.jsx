@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { IoMdClose } from 'react-icons/io';
 
+
 const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -47,7 +48,7 @@ const Header = () => {
           <div className='flex items-center gap-3'>
             <img
               className='w-10 h-10 sm:w-12 sm:h-12'
-              src='src/assets/images/logo (2).png'
+              src='../src/assets/images/logo (2).png'
               alt='logo'
             />
             <span className='font-extrabold text-xl sm:text-2xl lg:text-3xl text-[#152C5B]'>
