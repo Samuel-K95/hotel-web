@@ -28,6 +28,7 @@ const ContactUs = () => {
 
   return (
     <div className='w-full flex flex-col items-center justify-center gap-10'>
+        { /* backgroud should be actual integrated map */}
       <section className='w-[70%] flex items-center text-center h-[50vh] justify-center text-sm md:text-md lg:text-xl m-10 rounded-3xl p-10' style={{ backgroundColor: 'rgba(50, 82, 223, 0.2)' }}>
         <p className='font-bold text-2xl sm:text-3xl lg:text-5xl text-[#152C5B]'>Contact-Us</p>
       </section>
@@ -45,6 +46,8 @@ const ContactUs = () => {
             <ContactItem icon={<Mail className="h-10 w-10 text-[#3252DF]" />} title={"Email"} content={"reservations@luxuryhotels.com"} />
             <ContactItem icon={<Clock className="h-10 w-10 text-[#3252DF]" />} title={"Front Desk Hours"} content={"24 hours, 7 days a week"} />
           </div>
+          { /* Intagrate map */}
+          <p className='font-bold text-3xl sm:text-4xl text-[#152C5B]'>Find Us</p>
         </div>
 
         {/* Form */}
